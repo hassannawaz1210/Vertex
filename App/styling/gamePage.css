@@ -1,0 +1,178 @@
+#background1{
+    -fx-background-color: #222222;
+    -fx-padding: 10px;
+
+}
+
+#scrollPanelBg{
+    -fx-background-color: #222222;
+}
+
+#scrollPanelBg .scroll-bar:vertical {
+    -fx-background-color: #FFFFFF; /* Scroll bar track color */
+    -fx-background-radius: 15;
+    -fx-background-insets: 0, 1, 2;
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+    -fx-border-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0);
+}
+
+#scrollPanelBg .scroll-bar:vertical .thumb {
+    -fx-background-color: #035C4D; /* Scroll bar thumb color */
+    -fx-background-radius: 15;
+    -fx-background-insets: 0, 1, 2;
+}
+
+#scrollPanelBg .scroll-bar:horizontal {
+    -fx-background-color: #FFFFFF; /* Scroll bar track color */
+    -fx-background-radius: 15;
+    -fx-background-insets: 0, 1, 2;
+    -fx-border-radius: 15;
+    -fx-border-width: 1;
+    -fx-border-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0);
+}
+
+#scrollPanelBg .scroll-bar:horizontal .thumb {
+    -fx-background-color: #035C4D; /* Scroll bar thumb color */
+    -fx-background-radius: 15;
+    -fx-background-insets: 0, 1, 2;
+}
+
+
+#navBar
+{
+    -fx-background-color: #035C4D;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+
+
+
+.menuButton{
+    -fx-background-color: #035c4d00;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10;
+    -fx-font-weight: bold;
+}
+
+.menuButton:hover{
+    -fx-background-color: #035C4D;
+}
+
+.menuButton:focused{
+    -fx-background-color: #035C4D;
+}
+
+#buyButton, #cartButton{
+    -fx-background-color: #ff0000;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+    -fx-text-alignment: center;    
+    -fx-font-weight: bold;
+}
+
+
+#buyButton:hover{
+    -fx-background-color: #9eadff;
+}
+
+#cartButton{
+    -fx-background-color: #000000;
+}
+
+#cartButton:hover{
+    -fx-background-color: #9eadff;
+}
+
+#goBackButton{
+    -fx-background-color: #035C4D;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5;
+
+
+}
+
+#mainVboxBg{
+    -fx-background-color: #222222;
+    -fx-padding: 10;
+}
+
+#reviewBg{
+    -fx-background-color: #035C4D;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+
+#imageViewBg{
+    -fx-background-radius: 20;
+    -fx-background-color: #ffffff;
+}
+
+#starsInputField{
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #515151;
+    -fx-background-color: transparent;
+    -fx-border-width: 5;
+    -fx-border-color: #0000002e;
+    -fx-font-size: 14px;    
+}
+
+#starsInputField:focused{
+    -fx-border-color: #000000;
+    -fx-border-width: 5;
+    -fx-font-size: 14px;
+    
+}
+
+#reviewCommentField{
+    -fx-border-width: 0;
+    -fx-background-color: #5151513f;
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+
+}
+
+#reviewCommentField:focused{
+    -fx-font-size: 14px;
+    -fx-background-color: #000000;
+    -fx-padding: 5;
+}
+
+#submitButton{
+    -fx-background-color: #222222;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+    -fx-font-size: 14;
+    -fx-text-alignment: center;    
+}
+
+#submitButton:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}   
+
+#infoBox{
+    -fx-border-width: 1;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+#reportButton
+{
+    -fx-background-color: #035C4D;
+    -fx-font-size: 13;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+    -fx-background-radius: 5;
+}

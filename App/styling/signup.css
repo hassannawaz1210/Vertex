@@ -1,0 +1,79 @@
+#background1{
+    -fx-background-color: #222222;
+}
+
+#background2{
+    -fx-background-color: #222222;
+}
+
+#background3{
+    -fx-background-color: #035C4D;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+#signupButton
+{
+    -fx-background-color: #222222;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-text-alignment: center;    
+}
+
+#signupButton:hover
+{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    
+}
+
+.inputField{
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+
+}
+
+.inputField:focused{
+    -fx-border-color: #ffffff;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-font-size: 14px;
+    
+}
+
+
+
+#accTypeButton{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-text-fill: #000000;
+    -fx-padding: 7;
+    -fx-font-size: 12;
+    -fx-text-alignment: center;   
+    -fx-pref-height: 15; 
+}
+
+#accTypeButton .context-menu {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-padding: 7;
+}
+
+#accTypeButton .context-menu .menu-item:hover {
+    -fx-background-color: #d4d4d4;
+}
+
+#accTypeButton .arrow{
+    -fx-background-color: #000000;
+}

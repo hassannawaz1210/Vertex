@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="821.0" stylesheets="@../styling/gamePage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.GameController">
+   <right>
+      <ScrollPane id="scrollPanelBg" prefHeight="562.0" prefWidth="586.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox id="mainVboxBg" prefHeight="861.0" prefWidth="558.0" spacing="20.0">
+               <children>
+                  <Button id="goBackButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="578.0" text="Go back" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="title" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Call of Duty Modern Warfare" wrappingWidth="455.091064453125">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Button id="reportButton" mnemonicParsing="false" onAction="#gotoReportPage" text="Report Game" />
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox id="reviewBg" prefHeight="258.0" prefWidth="555.0" spacing="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="coverPicture" fitHeight="259.0" fitWidth="192.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@assets/noimage.jpg" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <AnchorPane id="infoBox" prefHeight="259.0" prefWidth="240.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" layoutX="20.8" layoutY="20.8" prefHeight="186.0" prefWidth="237.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="243.0" spacing="5.0" style="-fx-background-color: #ff0000;">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+                                                         <font>
+                                                            <Font name="System Bold" size="18.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fx:id="price" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="100$">
+                                                         <font>
+                                                            <Font name="System Bold" size="18.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                                <Button id="cartButton" mnemonicParsing="false" onAction="#purchaseGame" prefHeight="45.0" prefWidth="254.0" text="Buy" />
+                                                <HBox layoutX="10.0" layoutY="122.0" prefHeight="18.0" prefWidth="217.0" spacing="2.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher " />
+                                                      <Text fx:id="publisher" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rockstar" textAlignment="RIGHT" wrappingWidth="178.7832317352295" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="151.0" prefHeight="18.0" prefWidth="217.0" spacing="2.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer :" />
+                                                      <Text fx:id="developer" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rockstar" textAlignment="RIGHT" wrappingWidth="172.383207321167" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="122.0" prefHeight="18.0" prefWidth="217.0" spacing="2.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date :" />
+                                                      <Text fx:id="releaseDate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="19 Aug 2023" textAlignment="RIGHT" wrappingWidth="155.583158493042" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="180.0" prefHeight="18.0" prefWidth="217.0" spacing="2.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Platform :" />
+                                                      <Text fx:id="Platform" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Windows" textAlignment="RIGHT" wrappingWidth="181.9831829071045" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reviews and Ratings">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="reviewContainer" spacing="10.0" />
+                     </children>
+                  </VBox>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Submit Review">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <VBox id="reviewBg" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="7.0">
+                           <children>
+                              <HBox prefHeight="0.0" prefWidth="556.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stars:" wrappingWidth="39.583045959472656">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <TextField id="starsInputField" fx:id="starsField" prefHeight="0.0" prefWidth="38.0" />
+                                 </children>
+                              </HBox>
+                              <TextArea id="reviewCommentField" fx:id="commentField" prefHeight="102.0" prefWidth="556.0" promptText="Comment" />
+                              <Button id="submitButton" mnemonicParsing="false" onAction="#submitReview" prefHeight="40.0" prefWidth="160.0" text="Submit" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </right>
+</BorderPane>

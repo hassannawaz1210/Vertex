@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="577.0" stylesheets="@../styling/editAccount.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UI.EditAccountController">
+   <left>
+      <AnchorPane prefHeight="410.0" prefWidth="252.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane id="background1" prefHeight="410.0" prefWidth="303.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox id="background2" alignment="TOP_CENTER" layoutX="20.8" layoutY="20.8" prefHeight="390.0" prefWidth="281.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Account">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="234.0" promptText="name" styleClass="inputField" />
+                  <TextField fx:id="emailField" layoutX="32.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="234.0" promptText="email" styleClass="inputField" />
+                  <TextField fx:id="passwordField" layoutX="32.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="234.0" promptText="password" styleClass="inputField" />
+                  <TextField fx:id="usernameField" layoutX="32.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="234.0" promptText="username" styleClass="inputField" />
+                  <TextField fx:id="bioField" alignment="TOP_LEFT" prefHeight="78.0" prefWidth="258.0" promptText="bio" />
+                  <Button mnemonicParsing="false" onAction="#saveChanges" text="Save changes" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

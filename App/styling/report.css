@@ -1,0 +1,60 @@
+#background1{
+    -fx-background-color: #222222;
+    -fx-padding: 10px;
+
+}
+
+#background2{
+    -fx-background-color: #222222;
+    -fx-padding: 10px;
+}
+
+#background3{
+    -fx-background-color: #035C4D;
+    -fx-padding: 10px;
+    -fx-background-radius: 5;
+}
+
+#header{
+    -fx-background-color: #035C4D;
+    -fx-padding: 10px;
+    -fx-background-radius: 5;
+}
+
+.menuButton{
+    -fx-background-color: #035c4d00;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10;
+    -fx-font-weight: bold;
+}
+
+.menuButton:hover{
+    -fx-background-color: #035C4D;
+}
+
+#goBackButton{
+    -fx-background-color: #035C4D;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 5
+}
+
+#goBackButton:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+
+}
+
+#button{
+    -fx-background-color: #222222;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+    -fx-text-alignment: center;    
+}
+
+#button:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
